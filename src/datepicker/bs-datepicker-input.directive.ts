@@ -179,7 +179,7 @@ export class BsDatepickerInputDirective
         );
       }
 
-      this._value = parseDate(value, this._picker._config.dateInputFormat, this._localeService.currentLocale);
+      this._value = parseDate(value, this._picker._config.dateInputFormat, this._localeService.currentLocale, true);
 
       if (this._picker._config.useUtc) {
         this._value = utcAsLocal(this._value);
